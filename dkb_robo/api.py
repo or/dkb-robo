@@ -391,6 +391,7 @@ class Wrapper(object):
         if 'bookingDate' in transaction['attributes']:
             output_dic['bdate'] = transaction['attributes']['bookingDate']
             output_dic['vdate'] = transaction['attributes']['bookingDate']
+            output_dic['authdate'] = transaction['attributes']['authorizationDate']
         if 'description' in transaction['attributes']:
             output_dic['text'] = transaction['attributes']['description']
 
